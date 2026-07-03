@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="text/html"; charset="utf-8">
+        <meta name="viewport" content="width=device-widtd initial-scale=1.0">
+        <title> Nike Store</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <nav>
+            <img src="logo.png" width="130px" height="50px">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html"> About Us</a></li>
+                <li><a href="All_Products.html">Products <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="men.html">Men</a></li>
+                        <li><a href="women_p.htm">Women</a></li>
+                        <li><a href="kids.html">Kids</a></li>
+                    </ul>
+                </li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contacts.html">Contact Us</a></li>
+                <li><a href="cart.html"> <i class="fa fa-shopping-cart"></i> </i><span id="cartBadge" class="badge">0</span>Cart</a></li>
+            </ul>
+                <a class="log" href="Login.html"> Sign up </a>
+        </nav>
+
+            <a href="women_p.htm" class="btn-3"><i class="fa fa-arrow-left"></i> Back</a>
+            <div class="small-container single-product">
+            <div class="PAKYU">
+                <div class="col-2">
+                    <center>
+                    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9c4c45da-b779-44a0-892b-064ec33fe9d8/dri-fit-one-ultra-high-waisted-8cm-brief-lined-shorts-GLV7B9.png">
+                    </center>
+                </div>
+
+                <div class="col-2">
+                    <p>Home / Clothes</p>
+                    <h1>Women's Ultra High-waisted 8cm (approx.) Brief-Lined Shorts</h1>
+                    <h4>₱1,995</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <select>
+                        <option>Select Size</option>
+                        <option>X-Small</option>
+                        <option>Small</option>
+                        <option>Meduim</option>
+                        <option>Large</option>
+                        <option>X-Large</option>
+                    </select>
+
+                    <input id="quantityInput" type="number" value="1">
+                    <button class="add-to-cart" onclick="updateAndAddToCart('Womens Ultra High-waisted 8cm (approx.) Brief-Lined Shorts', 1995 , 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9c4c45da-b779-44a0-892b-064ec33fe9d8/dri-fit-one-ultra-high-waisted-8cm-brief-lined-shorts-GLV7B9.png')" style="margin-bottom: 10px;">Add to Cart</button>
+                    <h3>Product Details<i class="fa fa-indent" style="color: #8ACDD7; margin-left: 10px;"></i></h3>
+                    <br>
+                    <p class="text" style="margin-right: 30px;"> These shorts are the ones that are down for everything you do—from long walks to HIIT to running errands. Their silky-smooth, ultra-soft woven fabric is balanced with sweat-wicking tech so you have ultimate comfort while feeling dry as you work out. An extra-high waistband sits above your hips for a hugging, supportive fit.
+                    </p>
+                </div>
+            </div>
+        </div>  
+
+       <div class="small-container">
+            <div class="matetot">
+                <h2>Related Products</h2>
+            </div>
+        </div>
+
+        <main class="product-grid">
+            
+            <div class="product">
+                <a href="product_details(25).htm"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dae51518-546e-4eb3-877f-f15a70cc5d79/sportswear-phoenix-fleece-cropped-v-neck-top-LbgS6N.png" alt="Product 1"></a>
+                    <p class="product-title">Women's Cropped V-Neck Top</p>
+                    <p class="product-type">Women's Shirt</p>
+                    <p class="product-price"><b>₱3,295</b></p>
+            </div>
+
+            <div class="product">
+                <a href="product_details(26).htm"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/53cfa98f-2a5c-43ba-ac10-3d7e86639778/sportswear-essential-oversized-long-sleeve-polo-ZTN3Gl.png" alt="Product 1"></a>
+                    <p class="product-title">Women's Oversized Long-Sleeve Polo</p>
+                    <p class="product-type">Women's Shirt</p>
+                    <p class="product-price"><b>₱2,595</b></p>
+            </div>
+
+            <div class="product">
+                <a href="product_details(27).htm"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4b0692c4-6906-47d9-bfa0-09192e06691e/sportswear-phoenix-plush-slim-long-sleeve-cropped-cosy-fleece-top-w9321B.png" alt="Product 1"></a>
+                    <p class="product-title">Women's Slim Long-Sleeve Cropped Cosy</p>
+                    <p class="product-type">Women's Shirt</p>
+                    <p class="product-price"><b>₱2,895</b></p>
+            </div>
+
+            <div class="product">
+                <a href="product_details(28).htm"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3e1eb37a-605b-4369-8e57-6706733f72c0/dri-fit-one-crew-neck-french-terry-tunic-8Dvcvs.png" alt="Product 1"></a>
+                    <p class="product-title">Women's Crew-Neck French Terry Tunic</p>
+                    <p class="product-type">Women's Shirt</p>
+                    <p class="product-price"><b>₱2,319</b></p>
+            </div>
+
+            <div class="product">
+                <a href="product_details(29).htm"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ff0007fe-d6a6-4ddc-afc3-68ab6cc8e536/sportswear-cropped-t-shirt-mzcggH.png" alt="Product 1"></a>
+                    <p class="product-title">Women's Cropped T-Shirt</p>
+                    <p class="product-type">Women's Shirt</p>
+                    <p class="product-price"><b>₱1,695</b></p>
+            </div>
+
+            <div class="product">
+                <a href="product_details(30).htm"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/de3b3366-01f8-4392-9c81-8f4cc43d204b/sportswear-phoenix-fleece-oversized-crew-neck-logo-sweatBag-WGQKK3.png" alt="Product 1"></a>
+                    <p class="product-title">Women's Standard-Fit Short-Sleeve Top</p>
+                    <p class="product-type">Women's Shirt</p>
+                    <p class="product-price"><b>₱1,395</b></p>
+            </div>
+
+            <div class="product">
+                <a href="product_details(31).htm"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/71df95b5-2c97-4d05-9cff-ae5f8e8bd5c0/dri-fit-one-ultra-high-waisted-trousers-N0w5cZ.png" alt="Product 1"></a>
+                    <p class="product-title">Women's Ultra High-Waisted Trousers</p>
+                    <p class="product-type">Women's Shirt</p>
+                    <p class="product-price"><b>₱3,095</b></p>
+            </div>
+
+            <div class="product">
+                <a href="product_details(32).htm"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2b32acb3-3cac-4f99-a33a-38b5369de3e6/sportswear-essential-woven-high-waisted-trousers-BWGbCZ.png" alt="Product 1"></a>
+                    <p class="product-title">Women's Woven High-Waisted Trousers</p>
+                    <p class="product-type">Women's Shirt</p>
+                    <p class="product-price"><b>₱3,795</b></p>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="containerF">
+                <div class="row4">
+                    <div class="footer-col">
+                        <h4>About Us</h4>
+                        <p>Nike, a global leader in athletic footwear and apparel, was founded in 1964 by Bill Bowerman and Phil 
+                            Knight. Renowned for innovation, our iconic swoosh represents a commitment to excellence. We inspire 
+                            athletes worldwide to reach new heights, embracing diversity and sustainability. Nike: Just Do It.</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact Info</h4>
+                        <p><i class="fa fa-map-marker"></i> One Bowerman Dr, Beaverton, OR 97005, United States</p>
+                        <br>
+                        <p><i class="fa fa-phone"></i> 1-800-344-6453</p>
+                        <br>
+                        <p><i class="fa fa-envelope"></i> nike@email.com</p>
+                    </div>
+                    <div class="footer-col">
+                        <div>
+                            <h4>Follow us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube-play"></i></a>
+                            </div>
+                        </div>
+    
+                        <div class="author">
+                            <h4>This Webpage is made by</h4>  
+                            <p>Jelyka Mae M. Dizon</p>
+                            <p>Julienne Danna T. Felipe</p>
+                            <p>Natalie Joy D. Veluz</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            function addToCart(productName, price, imageUrl, size, quantity) {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            
+                const existingItem = cart.find(item => item.name === productName && item.size === size);
+            
+                if (existingItem) {
+                    existingItem.quantity += quantity;
+                } else {
+                    cart.push({ name: productName, price: price, size: size, quantity: quantity, image: imageUrl });
+                }
+            
+                localStorage.setItem('cart', JSON.stringify(cart));
+            
+                updateCartBadge();
+            
+                alert(`Your selected item (${productName}, Size: ${size}) has been added to the cart.`);
+            }
+            
+            function updateCartBadge() {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                const cartBadge = document.getElementById('cartBadge');
+            
+                let totalQuantity = 0;
+                cart.forEach(item => {
+                    totalQuantity += item.quantity;
+                });
+            
+                if (isNaN(totalQuantity)) {
+                    totalQuantity = 0;
+                }
+            
+                cartBadge.textContent = totalQuantity;
+            }
+            
+            updateCartBadge();
+            
+            function openCartPage() {
+                window.location.href = 'cart.html';
+            }
+            
+            function updateAndAddToCart(productName, price, imageUrl, size) {
+                const sizeSelect = document.getElementById('sizeSelect');
+                const quantityInput = document.getElementById('quantityInput');
+            
+                const selectedSize = sizeSelect.value;
+                const newQuantity = parseInt(quantityInput.value);
+            
+                if (selectedSize === "") {
+                    alert('Please select a size.');
+                    return;
+                }
+            
+                if (isNaN(newQuantity) || newQuantity < 1) {
+                    alert('Please enter a valid quantity.');
+                    return;
+                }
+            
+                addToCart(productName, price, imageUrl, selectedSize, newQuantity);
+            }
+               </script>
+</body>
+</html>

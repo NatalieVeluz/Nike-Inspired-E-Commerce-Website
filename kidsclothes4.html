@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="text/html"; charset="utf-8">
+        <meta name="viewport" content="width=device-widtd initial-scale=1.0">
+        <title> Nike Store</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <nav>
+            <img src="logo.png" width="130px" height="50px">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html"> About Us</a></li>
+                <li><a href="All_Products.html">Products <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="men.html">Men</a></li>
+                        <li><a href="women_p.htm">Women</a></li>
+                        <li><a href="kids.html">Kids</a></li>
+                    </ul>
+                </li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contacts.html">Contact Us</a></li>
+                <li><a href="cart.html"> <i class="fa fa-shopping-cart"></i> </i><span id="cartBadge" class="badge">0</span>Cart</a></li>
+            </ul>
+                <a class="log" href="Login.html"> Sign up </a>
+        </nav>
+        <a href="men.html" class="btn-3"><i class="fa fa-arrow-left"></i>Back</a>
+        <div class="small-container single-product">
+            <div class="productdeets">
+                <div class="col-2">
+                    <center>
+                    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e950fdf4-a997-4261-92e6-297e738021e0/sportswear-older-t-shirt-hMW468.png">
+                    </center>
+                </div>
+
+                <div class="col-2">
+                    <p>Home / Clothes</p>
+                    <h1>Nike Older Kids' (Girls') T-Shirt</h1>
+                    <h4>₱995</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <select id="sizeSelect">
+                        <option value="">Select Size</option>
+                        <option value="SMALL">SMALL</option>
+                        <option value="MEDIUM">MEDIUM</option>
+                        <option value="LARGE">LARGE</option>
+                        <option value="X-LARGE">X-LARGE</option>
+                    </select>
+
+                    <input id="quantityInput" type="number" value="1">
+                    <button class="add-to-cart" onclick="updateAndAddToCart('Nike Older Kids (Girls) T-Shirt', 995 , 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e950fdf4-a997-4261-92e6-297e738021e0/sportswear-older-t-shirt-hMW468.png')" style="margin-bottom: 10px;">Add to Cart</button>
+                    <h3>Product Details<i class="fa fa-indent" style="color: #8ACDD7; margin-left: 10px;"></i></h3>
+                    <br>
+                    <p class="text" style="margin-right: 30px;">Go big and celebrate one of our favourite innovations in this comfy tee. Made from our soft and lightweight everyday cotton fabric, this T-shirt is roomy and relaxed in all the right places, giving you plenty of space to play your way.
+                    </p>
+                </div>
+            </div>
+        </div>  
+
+        <div class="small-container">
+            <div class="matetot">
+                <h2>Related Products</h2>
+            </div>
+        </div>
+
+        <main class="product-grid">
+            <div class="product">
+                <a href="kidsclothes5.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/660ee5b3-6a57-4273-87fc-0b16e001220f/sportswear-older-dri-fit-loose-fleece-joggers-NLNgzh.png" alt="Product 1"></a>
+                    <p class="product-title">Older Kids' (Girls') Dri-FIT Loose Fleece Joggers</p>
+                    <p class="product-type">kid's Clothes'</p>
+                    <p class="product-price"><b>₱2,495</b></p>
+            </div>
+
+            <div class="product">
+                <a href="kidsclothes6.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b1c3d70f-e6ae-4760-a360-c7f5ea110eb5/sportswear-club-fleece-older-oversized-hoodie-Bqrjgm.png" alt="Product 1"></a>
+                    <p class="product-title"> Older Kids' (Girls') Oversized Full-Zip Hoodie</p>
+                    <p class="product-type">kid's Clothes'</p>
+                    <p class="product-price"><b>₱1,895</b></p>
+            </div>
+
+            <div class="product">
+                <a href="kidsclothes7.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ba3c21d8-df04-471d-9fbe-c9dd58d8b3e9/sportswear-tech-fleece-older-hoodie-cZ9jrf.png" alt="Product 1"></a>
+                    <p class="product-title">Older Kids' (Boys') Full-Zip Hoodie</p>
+                    <p class="product-type">kid's Clothes'</p>
+                    <p class="product-price"><b>₱4,495</b></p>
+            </div>
+
+            <div class="product">
+                <a href="kidsclothes8.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0d14759d-fef8-4c66-a7cf-efab5b97ba8c/pro-dri-fit-leggings-rW2Dx6.png" alt="Product 1"></a>
+                    <p class="product-title">Girls' Dri-FIT Leggings</p>
+                    <p class="product-type">kid's Clothes'</p>
+                    <p class="product-price"><b>₱1,495</b></p>
+            </div>
+
+            <div class="product">
+                <a href="kidsclothes9.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fe126dba-8ac7-4406-9a7e-513e077ba9e2/pro-swoosh-dri-fit-sports-bra-6lH4h9.png" alt="Product 1"></a>
+                    <p class="product-title">Girls' Dri-FIT Sports Bra</p>
+                    <p class="product-type">kid's Clothes'</p>
+                    <p class="product-price"><b>₱1,295</b></p>
+            </div>
+
+            <div class="product">
+                <a href="kidsclothes10.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ec913cde-41c7-43a2-9d9d-6cdcc3b99c53/jersey-older-shorts-jr9Nxg.png" alt="Product 1"></a>
+                    <p class="product-title"> Older Kids' (Boys') Shorts</p>
+                    <p class="product-type">kid's Clothes'</p>
+                    <p class="product-price"><b>₱1,145</b></p>
+            </div>
+
+            <div class="product">
+                <a href="kidsclothes11.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/df6dc2da-01e6-4035-b7da-6a539ac3db37/tech-fleece-older-camo-hoodie-56FgKp.png" alt="Product 1"></a>
+                    <p class="product-title">Older Kids' (Boys') Camo Full-Zip Hoodie</p>
+                    <p class="product-type">kid's Clothes'</p>
+                    <p class="product-price"><b>₱4,495</b></p>
+            </div>
+            
+            <div class="product">
+                <a href="kidsclothes12.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f0d47b20-6152-4cb5-8b08-27005bc35472/sportswear-club-fleece-older-oversized-french-terry-crew-neck-sweatshirt-x1rTx2.png" alt="Product 1"></a>
+                    <p class="product-title">Older Kids' (Girls') Oversized French Terry Crew-Neck Sweatshirt</p>
+                    <p class="product-type">kid's Clothes'</p>
+                    <p class="product-price"><b>₱1,895</b></p>
+            </div>
+            
+    </main>
+
+    <footer class="footer">
+        <div class="containerF">
+            <div class="row4">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <p>Nike, a global leader in athletic footwear and apparel, was founded in 1964 by Bill Bowerman and Phil 
+                        Knight. Renowned for innovation, our iconic swoosh represents a commitment to excellence. We inspire 
+                        athletes worldwide to reach new heights, embracing diversity and sustainability. Nike: Just Do It.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <p><i class="fa fa-map-marker"></i> One Bowerman Dr, Beaverton, OR 97005, United States</p>
+                    <br>
+                    <p><i class="fa fa-phone"></i> 1-800-344-6453</p>
+                    <br>
+                    <p><i class="fa fa-envelope"></i> nike@email.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+   <script>
+    function addToCart(productName, price, imageUrl, size, quantity) {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    
+        const existingItem = cart.find(item => item.name === productName && item.size === size);
+    
+        if (existingItem) {
+            existingItem.quantity += quantity;
+        } else {
+            cart.push({ name: productName, price: price, size: size, quantity: quantity, image: imageUrl });
+        }
+    
+        localStorage.setItem('cart', JSON.stringify(cart));
+    
+        updateCartBadge();
+    
+        alert(`Your selected item (${productName}, Size: ${size}) has been added to the cart.`);
+    }
+    
+    function updateCartBadge() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const cartBadge = document.getElementById('cartBadge');
+    
+        let totalQuantity = 0;
+        cart.forEach(item => {
+            totalQuantity += item.quantity;
+        });
+    
+        if (isNaN(totalQuantity)) {
+            totalQuantity = 0;
+        }
+    
+        cartBadge.textContent = totalQuantity;
+    }
+    
+    updateCartBadge();
+    
+    function openCartPage() {
+        window.location.href = 'cart.html';
+    }
+    
+    function updateAndAddToCart(productName, price, imageUrl, size) {
+        const sizeSelect = document.getElementById('sizeSelect');
+        const quantityInput = document.getElementById('quantityInput');
+    
+        const selectedSize = sizeSelect.value;
+        const newQuantity = parseInt(quantityInput.value);
+    
+        if (selectedSize === "") {
+            alert('Please select a size.');
+            return;
+        }
+    
+        if (isNaN(newQuantity) || newQuantity < 1) {
+            alert('Please enter a valid quantity.');
+            return;
+        }
+    
+        addToCart(productName, price, imageUrl, selectedSize, newQuantity);
+    }
+       </script>
+</body>
+</html>

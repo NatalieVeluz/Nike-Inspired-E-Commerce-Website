@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="text/html"; charset="utf-8">
+        <meta name="viewport" content="width=device-widtd initial-scale=1.0">
+        <title> Nike Store</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav>
+            <img src="logo.png" width="130px" height="50px">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html"> About Us</a></li>
+                <li><a href="All_Products.html">Products <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="men.html">Men</a></li>
+                        <li><a href="women_p.htm">Women</a></li>
+                        <li><a href="kids.html">Kids</a></li>
+                    </ul>
+                </li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contacts.html">Contact Us</a></li>
+                <li><a href="cart.html"> <i class="fa fa-shopping-cart"></i> </i><span id="cartBadge" class="badge">0</span>Cart</a></li>
+            </ul>
+                <a class="log" href="Login.html"> Sign up </a>
+        </nav>
+
+        <div class="container">
+            <div class="forms-container">
+               <div class="signin-signup">
+                 <form action="" class="sign-in-form">
+                     <h2 class="title">Sign in</h2>
+                        <div class="input-field"> 
+                         <i class="fa fa-user-circle-o"></i>
+                         <input type="text" placeholder="Username">
+                         </div>
+                     <div class="input-field"> 
+                         <i class="fa fa-unlock-alt"></i>
+                         <input type="password" placeholder="Password">
+                     </div>
+                     <input type="submit" value="Login" class="btn-0 solid">
+                     <p class="social-text">Or sign in with social platforms </p>
+                 
+                 <div class="social-media">
+                         <a href="" class="social-icon">
+                             <i class="fa fa-facebook-official"></i>
+                         </a>
+                         <a href="#" class="social-icon">
+                             <i class="fa fa-google"></i>
+                         </a>
+                         <a href="#" class="social-icon">
+                             <i class="fa fa-twitter"></i>
+                         </a>
+                        
+                         <a href="#" class="social-icon">
+                             <i class="fa fa-linkedin"></i>
+                         </a>
+                  </div>
+                 </form>
+     
+         <form action="" class="sign-up-form">
+                     <h2 class="title">Sign Up</h2>
+                        <div class="input-field"> 
+                         <i class="fa fa-user-circle-o"></i>
+                         <input type="text" placeholder="Username">
+                         </div>
+                         <div class="input-field"> 
+                             <i class="fa fa-envelope"></i>
+                             <input type="text" placeholder="Email">
+                             </div>
+                     <div class="input-field"> 
+                         <i class="fa fa-unlock-alt"></i>
+                         <input type="password" placeholder="Password">
+                     </div>
+                     <input type="submit" value="Sign up" class="btn-0 solid">
+                     <p class="social-text">Or sign up with social platforms </p>
+                 
+                 <div class="social-media">
+                    <a href="" class="social-icon">
+                        <i class="fa fa-facebook-official"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fa fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                   
+                    <a href="#" class="social-icon">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                  </div>
+         </form>
+     
+               </div>
+            </div>
+     
+     
+            <div class="panels-container">
+             <div class="panel left-panel">
+               <div class="content">
+           <h3>Don't Have Account?</h3>
+           <p>Create account free here. You can also used your favourite social media platforms to create an account</p>
+           
+           <button class="btn-0 transparent" id="sign-up-btn">Sign Up</button>
+           
+           </div>
+           <img src="Img/signup.svg" class="image"  alt="">
+            </div>
+        
+           
+     
+             <div class="panel right-panel">
+               <div class="content">
+           <h3>Already have an account?</h3>
+           <p>Sign in here with your Email and Password</p>
+           
+           <button class="btn-0 transparent" id="sign-In-btn">Sign In</button>
+           
+           </div>
+           <img src="Img/Login.svg" class="image"  alt="">
+            </div>
+         </div>
+        <script src="script.js"></script>
+     
+         <script>
+            function addToCart(productName, price, imageUrl, size, quantity) {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            
+                const existingItem = cart.find(item => item.name === productName && item.size === size);
+            
+                if (existingItem) {
+                    existingItem.quantity += quantity;
+                } else {
+                    cart.push({ name: productName, price: price, size: size, quantity: quantity, image: imageUrl });
+                }
+            
+                localStorage.setItem('cart', JSON.stringify(cart));
+            
+                updateCartBadge();
+            
+                alert(`Your selected item (${productName}, Size: ${size}) has been added to the cart.`);
+            }
+            
+            function updateCartBadge() {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                const cartBadge = document.getElementById('cartBadge');
+            
+                let totalQuantity = 0;
+                cart.forEach(item => {
+                    totalQuantity += item.quantity;
+                });
+            
+                if (isNaN(totalQuantity)) {
+                    totalQuantity = 0;
+                }
+            
+                cartBadge.textContent = totalQuantity;
+            }
+            
+            updateCartBadge();
+            
+            function openCartPage() {
+                window.location.href = 'cart.html';
+            }
+            
+            function updateAndAddToCart(productName, price, imageUrl, size) {
+                const sizeSelect = document.getElementById('sizeSelect');
+                const quantityInput = document.getElementById('quantityInput');
+            
+                const selectedSize = sizeSelect.value;
+                const newQuantity = parseInt(quantityInput.value);
+            
+                if (selectedSize === "") {
+                    alert('Please select a size.');
+                    return;
+                }
+            
+                if (isNaN(newQuantity) || newQuantity < 1) {
+                    alert('Please enter a valid quantity.');
+                    return;
+                }
+            
+                addToCart(productName, price, imageUrl, selectedSize, newQuantity);
+            }
+               </script>
+         
+    </body>
+</html>
