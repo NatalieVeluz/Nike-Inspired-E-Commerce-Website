@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="text/html"; charset="utf-8">
+        <meta name="viewport" content="width=device-widtd initial-scale=1.0">
+        <title> Nike Store</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <nav>
+            <img src="logo.png" width="130px" height="50px">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html"> About Us</a></li>
+                <li><a href="All_Products.html">Products <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="men.html">Men</a></li>
+                        <li><a href="women_p.htm">Women</a></li>
+                        <li><a href="kids.html">Kids</a></li>
+                    </ul>
+                </li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contacts.html">Contact Us</a></li>
+                <li><a href="cart.html"> <i class="fa fa-shopping-cart"></i> </i><span id="cartBadge" class="badge">0</span>Cart</a></li>
+            </ul>
+                <a class="log" href="Login.html"> Sign up </a>
+        </nav>
+
+        <a href="men.html" class="btn-3"><i class="fa fa-arrow-left"></i>Back</a>
+        <div class="small-container single-product">
+            <div class="productdeets">
+                <div class="col-2">
+                    <center>
+                    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/eac5f817-ac30-4273-8baf-9c929d1ee581/paris-saint-germain-wordmark-heritage-85-t-shirt-WGKftl.png">
+                    </center>
+                </div>
+
+                <div class="col-2">
+                    <p>Home / Clothes</p>
+                    <h1>Men's Wordmark Heritage 85 T-Shirt</h1>
+                    <h4>₱2,195</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <select id="sizeSelect">
+                        <option value="">Select Size</option>
+                        <option value="SMALL">SMALL</option>
+                        <option value="MEDIUM">MEDIUM</option>
+                        <option value="LARGE">LARGE</option>
+                        <option value="X-LARGE">X-LARGE</option>
+                    </select>
+
+                    <input id="quantityInput" type="number" value="1">
+                    <button class="add-to-cart" onclick="updateAndAddToCart('Mens Wordmark Heritage 85 T-Shirt', 2195 , 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/eac5f817-ac30-4273-8baf-9c929d1ee581/paris-saint-germain-wordmark-heritage-85-t-shirt-WGKftl.png')" style="margin-bottom: 10px;">Add to Cart</button>
+                    <h3>Product Details<i class="fa fa-indent" style="color: #8ACDD7; margin-left: 10px;"></i></h3>
+                    <br>
+                    <p class="text" style="margin-right: 30px;">Upgrade your joggers game with Jordan Brand and PSG. Made from soft and cosy fleece that's smooth on the outside and plush on the inside, these relaxed tracksuit bottoms feature minimal branding and sleek taping details.
+                    </div>
+            </div>
+        </div>  
+
+       <div class="small-container">
+            <div class="matetot">
+                <h2>Related Products</h2>
+            </div>
+        </div>
+
+        <main class="product-grid">
+            <div class="product">
+                <a href="productclothesm1.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bda0013b-db08-451b-aa48-06d9e8e8b6c1/jordan-dri-fit-sport-graphic-t-shirt-WFsfk6.png" alt="Product 1"></a>
+                    <p class="product-title">Jordan Brooklyn Fleece</p>
+                    <p class="product-type">Men's Shirt</p>
+                    <p class="product-price">₱1,895</p>
+            </div>
+    
+            <div class="product">
+                <a href="productclothesm2.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bcb03fd0-a528-4178-8404-25e598119534/jordan-brooklyn-fleece-pullover-hoodie-pftwK5.png" alt="Product 1"></a>
+                    <p class="product-title">Jordan Brooklyn Fleece (Joggers)</p>
+                    <p class="product-type">Men's Shirt</p>
+                    <p class="product-price"><b>₱3,495</b></p>
+            </div>
+    
+            <div class="product">
+                <a href="productclothesm3.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/96cf21bf-3908-44c6-bd94-0c1841201fde/paris-saint-germain-fleece-pullover-hoodie-M4QClq.png" alt="Product 1"></a>
+                    <p class="product-title">Paris Saint-Germain</p>
+                    <p class="product-type">Men's Shirt</p>
+                    <p class="product-price"><b>₱3,495</b></p>
+            </div>
+    
+            <div class="product">
+                <a href="productclothesm4.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4aee54c3-8527-4e38-9517-902284c8ccd7/paris-saint-germain-fleece-trousers-5t5vDn.png" alt="Product 1"></a>
+                    <p class="product-title">Paris Saint-Germain (Joggers)</p>
+                    <p class="product-type">Men's Pants</p>
+                    <p class="product-price"><b>₱3,295</b></p>
+            </div>
+
+            <div class="product">
+                <a href="productclothesm9.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/69f6317d-222d-4cd2-b224-4be3e6b6b516/club-short-sleeve-polo-t8PZMS.png" alt="Product 1"></a>
+                    <p class="product-title">Nike Club (Men's Short-Sleeve Polo)</p>
+                    <p class="product-type">Men's Shirt</p>
+                    <p class="product-price"><b>₱1,995</b></p>
+            </div>
+    
+            <div class="product">
+                <a href="productclothesm10.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cc0ee557-2306-435b-a2cf-b05ee70c2163/sb-long-sleeve-flannel-skate-button-down-shirt-sD6pJC.png" alt="Product 1"></a>
+                    <p class="product-title">Nike SB (Long-Sleeve Flannel Skate Button-Down Shirt)</p>
+                    <p class="product-type">Men's Shirt</p>
+                    <p class="product-price"><b>₱4,095</b></p>
+            </div>
+    
+            <div class="product">
+                <a href="productclothesm11.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c8f00b2e-19ce-48f2-9f24-2e4767f39029/culture-of-football-football-jacket-jX7MHn.png" alt="Product 1"></a>
+                    <p class="product-title">Nike Culture of Football</p>
+                    <p class="product-type">Men's Shirt</p>
+                    <p class="product-price"><b>₱10,995</b></p>
+            </div>
+    
+            <div class="product">
+                <a href="productclothesm12.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cd58cef8-4266-4676-8713-16820e0c8d91/life-long-sleeve-oxford-button-down-shirt-H3HB1W.png" alt="Product 1"></a>
+                    <p class="product-title">Men's Long-Sleeve Oxford Button-Down Shirt</p>
+                    <p class="product-type">Men's Shirt</p>
+                    <p class="product-price"><b>₱4,095</b></p>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="containerF">
+                <div class="row4">
+                    <div class="footer-col">
+                        <h4>About Us</h4>
+                        <p>Nike, a global leader in athletic footwear and apparel, was founded in 1964 by Bill Bowerman and Phil 
+                            Knight. Renowned for innovation, our iconic swoosh represents a commitment to excellence. We inspire 
+                            athletes worldwide to reach new heights, embracing diversity and sustainability. Nike: Just Do It.</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact Info</h4>
+                        <p><i class="fa fa-map-marker"></i> One Bowerman Dr, Beaverton, OR 97005, United States</p>
+                        <br>
+                        <p><i class="fa fa-phone"></i> 1-800-344-6453</p>
+                        <br>
+                        <p><i class="fa fa-envelope"></i> nike@email.com</p>
+                    </div>
+                    <div class="footer-col">
+                        <div>
+                            <h4>Follow us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube-play"></i></a>
+                            </div>
+                        </div>
+    
+                        <div class="author">
+                            <h4>This Webpage is made by</h4>  
+                            <p>Jelyka Mae M. Dizon</p>
+                            <p>Julienne Danna T. Felipe</p>
+                            <p>Natalie Joy D. Veluz</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            function addToCart(productName, price, imageUrl, size, quantity) {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            
+                const existingItem = cart.find(item => item.name === productName && item.size === size);
+            
+                if (existingItem) {
+                    existingItem.quantity += quantity;
+                } else {
+                    cart.push({ name: productName, price: price, size: size, quantity: quantity, image: imageUrl });
+                }
+            
+                localStorage.setItem('cart', JSON.stringify(cart));
+            
+                updateCartBadge();
+            
+                alert(`Your selected item (${productName}, Size: ${size}) has been added to the cart.`);
+            }
+            
+            function updateCartBadge() {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                const cartBadge = document.getElementById('cartBadge');
+            
+                let totalQuantity = 0;
+                cart.forEach(item => {
+                    totalQuantity += item.quantity;
+                });
+            
+                if (isNaN(totalQuantity)) {
+                    totalQuantity = 0;
+                }
+            
+                cartBadge.textContent = totalQuantity;
+            }
+            
+            updateCartBadge();
+            
+            function openCartPage() {
+                window.location.href = 'cart.html';
+            }
+            
+            function updateAndAddToCart(productName, price, imageUrl, size) {
+                const sizeSelect = document.getElementById('sizeSelect');
+                const quantityInput = document.getElementById('quantityInput');
+            
+                const selectedSize = sizeSelect.value;
+                const newQuantity = parseInt(quantityInput.value);
+            
+                if (selectedSize === "") {
+                    alert('Please select a size.');
+                    return;
+                }
+            
+                if (isNaN(newQuantity) || newQuantity < 1) {
+                    alert('Please enter a valid quantity.');
+                    return;
+                }
+            
+                addToCart(productName, price, imageUrl, selectedSize, newQuantity);
+            }
+               </script>
+    </body>
+</html>

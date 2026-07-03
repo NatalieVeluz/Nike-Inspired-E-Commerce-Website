@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="text/html"; charset="utf-8">
+        <meta name="viewport" content="width=device-widtd initial-scale=1.0">
+        <title> Nike Store</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <nav>
+            <img src="logo.png" width="130px" height="50px">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html"> About Us</a></li>
+                <li><a href="All_Products.html">Products <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="men.html">Men</a></li>
+                        <li><a href="women_p.htm">Women</a></li>
+                        <li><a href="kids.html">Kids</a></li>
+                    </ul>
+                </li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contacts.html">Contact Us</a></li>
+                <li><a href="cart.html"> <i class="fa fa-shopping-cart"></i> </i><span id="cartBadge" class="badge">0</span>Cart</a></li>
+            </ul>
+                <a class="log" href="Login.html"> Sign up </a>
+        </nav>
+
+        <a href="men.html" class="btn-3"><i class="fa fa-arrow-left"></i>Back</a>
+        <div class="small-container single-product">
+            <div class="productdeets">
+                <div class="col-2">
+                    <center>
+                    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a18b5353-87cd-486b-a689-5369f7764e40/initiator-running-shoe-NRLxhm.png">
+                    </center>
+                </div>
+
+                <div class="col-2">
+                    <p>Home / Shoes</p>
+                    <h1>Nike Initiator</h1>
+                    <h4>₱4,695</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <select id="sizeSelect">
+                <option value="">Select Size</option>
+                <option value="US 7">US 7</option>
+                <option value="US 7.5">US 7.5</option>
+                <option value="US 8">US 8</option>
+                <option value="US 8.5">US 8.5</option>
+                <option value="US 9">US 9</option>
+                <option value="US 9.5">US 9.5</option>
+                <option value="US 10">US 10</option>
+                    </select>
+
+                    <input id="quantityInput" type="number" value="1">
+                    <button class="add-to-cart" onclick="updateAndAddToCart('Nike Initiator', 4695, 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a18b5353-87cd-486b-a689-5369f7764e40/initiator-running-shoe-NRLxhm.png')" style="margin-bottom: 10px;">Add to Cart</button>
+                    <h3>Product Details<i class="fa fa-indent" style="color: #8ACDD7; margin-left: 10px;"></i></h3>
+                    <br>
+                    <p class="text" style="margin-right: 30px;">Put in miles with the comfortable support of the Nike Initiator. It has a breathable upper with a soft, cushioned design that helps you hit your stride with confidence.
+                    </p>
+                </div>
+            </div>
+        </div>  
+
+       <div class="small-container">
+            <div class="matetot">
+                <h2>Related Products</h2>
+            </div>
+        </div>
+
+        <main class="product-grid">
+            <div class="product">
+                <a href="productm1.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b5406b0d-fb0b-4e94-ab81-4d24a3d79a2f/air-force-1-07-shoes-8jXZH2.png" alt="Product 1"></a>
+                    <p class="product-title">Nike Air Force 1 '07</p>
+                    <p class="product-type">Men's Shoe</p>
+                    <p class="product-price"><b>₱7,395</b></p>
+            </div>
+
+            <div class="product">
+                <a href="productm2.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/73438f5c-8fa8-4bd2-9676-ac206c90b691/air-max-1-shoes-ZCSX34.png" alt="Product 1"></a>
+                    <p class="product-title">Nike Air Max 1</p>
+                    <p class="product-type">Men's Shoe</p>
+                    <p class="product-price"><b>₱7,895</b></p>
+            </div>
+
+            <div class="product">
+                <a href="productm3.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a3e7dead-1ad2-4c40-996d-93ebc9df0fca/dunk-low-retro-shoe-66RGqF.png" alt="Product 1"></a>
+                    <p class="product-title">Nike Dunk Low Retro</p>
+                    <p class="product-type">Men's Shoe</p>
+                    <p class="product-price"><b>₱5,495</b></p>
+            </div>
+
+            <div class="product">
+                <a href="productm4.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/437840c0-29b2-490b-85aa-5fcc60b513fa/air-force-1-07-lv8-shoes-lPdFPQ.png" alt="Product 1"></a>
+                    <p class="product-title">Nike Air Force 1 '07 LV8</p>
+                    <p class="product-type">Men's Shoe</p>
+                    <p class="product-price"><b>₱6,895</b></p>
+            </div>
+
+            <div class="product">
+                <a href="productm5.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1e91e13c-f515-45c2-9c30-25f634e49d6c/air-max-90-se-shoes-FQ39pC.png" alt="Product 1"></a>
+                    <p class="product-title">Nike Air Max 90 SE</p>
+                    <p class="product-type">Men's Shoe</p>
+                    <p class="product-price"><b>₱7,895</b></p>
+            </div>
+
+            <div class="product">
+                <a href="productm6.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b7b7e762-0b0f-4c4c-a2b7-a316cd7ba454/air-pegasus-89-shoes-QZqpqP.png" alt="Product 1"></a>
+                    <p class="product-title">Nike Air Pegasus '89</p>
+                    <p class="product-type">Men's Shoe</p>
+                    <p class="product-price"><b>₱4,995</b></p>
+            </div>
+
+            <div class="product">
+                <a href="productm7.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cfd167ff-38b9-41cc-902c-78e599c4b49e/waffle-debut-se-shoes-zPhTV5.png" alt="Product 1"></a>
+                    <p class="product-title">Nike Waffle Debut SE</p>
+                    <p class="product-type">Men's Shoe</p>
+                    <p class="product-price"><b>₱4,095</b></p>
+            </div>
+
+            <div class="product">
+                <a href="productm8.html"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9f03aaf4-5419-43a1-a50e-eb0e9393b709/full-force-low-shoes-ZchLRn.png" alt="Product 1"></a>
+                    <p class="product-title">Nike Full Force Low</p>
+                    <p class="product-type">Men's Shoe</p>
+                    <p class="product-price"><b>₱4,995</b></p>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="containerF">
+                <div class="row4">
+                    <div class="footer-col">
+                        <h4>About Us</h4>
+                        <p>Nike, a global leader in athletic footwear and apparel, was founded in 1964 by Bill Bowerman and Phil 
+                            Knight. Renowned for innovation, our iconic swoosh represents a commitment to excellence. We inspire 
+                            athletes worldwide to reach new heights, embracing diversity and sustainability. Nike: Just Do It.</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact Info</h4>
+                        <p><i class="fa fa-map-marker"></i> One Bowerman Dr, Beaverton, OR 97005, United States</p>
+                        <br>
+                        <p><i class="fa fa-phone"></i> 1-800-344-6453</p>
+                        <br>
+                        <p><i class="fa fa-envelope"></i> nike@email.com</p>
+                    </div>
+                    <div class="footer-col">
+                        <div>
+                            <h4>Follow us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube-play"></i></a>
+                            </div>
+                        </div>
+    
+                        <div class="author">
+                            <h4>This Webpage is made by</h4>  
+                            <p>Jelyka Mae M. Dizon</p>
+                            <p>Julienne Danna T. Felipe</p>
+                            <p>Natalie Joy D. Veluz</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            function addToCart(productName, price, imageUrl, size, quantity) {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            
+                const existingItem = cart.find(item => item.name === productName && item.size === size);
+            
+                if (existingItem) {
+                    existingItem.quantity += quantity;
+                } else {
+                    cart.push({ name: productName, price: price, size: size, quantity: quantity, image: imageUrl });
+                }
+            
+                localStorage.setItem('cart', JSON.stringify(cart));
+            
+                updateCartBadge();
+            
+                alert(`Your selected item (${productName}, Size: ${size}) has been added to the cart.`);
+            }
+            
+            function updateCartBadge() {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                const cartBadge = document.getElementById('cartBadge');
+            
+                let totalQuantity = 0;
+                cart.forEach(item => {
+                    totalQuantity += item.quantity;
+                });
+            
+                if (isNaN(totalQuantity)) {
+                    totalQuantity = 0;
+                }
+            
+                cartBadge.textContent = totalQuantity;
+            }
+            
+            updateCartBadge();
+            
+            function openCartPage() {
+                window.location.href = 'cart.html';
+            }
+            
+            function updateAndAddToCart(productName, price, imageUrl, size) {
+                const sizeSelect = document.getElementById('sizeSelect');
+                const quantityInput = document.getElementById('quantityInput');
+            
+                const selectedSize = sizeSelect.value;
+                const newQuantity = parseInt(quantityInput.value);
+            
+                if (selectedSize === "") {
+                    alert('Please select a size.');
+                    return;
+                }
+            
+                if (isNaN(newQuantity) || newQuantity < 1) {
+                    alert('Please enter a valid quantity.');
+                    return;
+                }
+            
+                addToCart(productName, price, imageUrl, selectedSize, newQuantity);
+            }
+               </script>
+    </body>
+</html>
