@@ -60,7 +60,7 @@ This project is a **front-end only** e-commerce website and does not include a b
 
 ## Author
 
-**Name:** *Your Name*
+**Name:** *Natalie Joy D. Veluz*
 
 ---
 
